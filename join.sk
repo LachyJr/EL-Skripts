@@ -1,0 +1,4 @@
+on join:
+    send "&6&l&m-----------------------------------------" to player
+    send "&b&l &6&LEVENT &8|  &b&lVitej na eventu %player%!" to player
+    send "&6&l&m-----------------------------------------" to player
