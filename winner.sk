@@ -1,0 +1,9 @@
+command /winner [<player>]:
+  permission: op
+  permission message: &6&LEVENT &8|   &c&lNa toto nemas dostatecna prava!
+  trigger:
+    if arg-1 is not set:
+      send "&6&lTUTORIAL &8|   &cMusis specifikovat jmeno hrace!" to player
+    if arg-1 is set:
+      make console execute command "/lp user %arg 1% parent set winner"
+      send "&6&lTUTORIAL &8|   Uspesne jsem nastavil hraci %arg 1% rank &e&lWINNER" to player
